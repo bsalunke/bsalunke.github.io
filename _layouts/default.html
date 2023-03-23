@@ -1,0 +1,88 @@
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+{% seo %}
+
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <meta name="viewport" content="width=device-width">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.fa {
+  padding: 10px;
+  font-size: 15px;
+  width: 25px;
+  text-align: center;
+  text-decoration: none;
+  margin: 3px 1px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-github {
+  background: #333;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-instagram {
+  background: #e1306c;
+  color: white;
+}
+
+.fa-500px {
+  background: #0099e5;
+  color: white;
+}
+
+.fa-youtube-play {
+  background: #FF0000;
+  color: white
+}
+</style>
+	  
+  </head>
+  <body>
+      <div class="wrapper">
+      <header>
+        <h1>Balasaheb Salunke</h1> 
+        <p>Working on building secure sofware world!</p>
+	
+
+	<!-- Add font awesome icons -->
+	<a href="https://twitter.com/bsalunke09" class="fa fa-twitter"></a>
+	<a href="https://github.com/bsalunke" class="fa fa-github"></a>
+	<a href="https://www.linkedin.com/in/balasaheb-salunke/" class="fa fa-linkedin"></a>
+	      
+
+	<p><br><a href="#current-affiliations">Current Affiliations</a> |
+	<a href="#past-affiliations">Past Affiliations</a> |
+	      
+      </header>
+      <section>
+	      
+	{{ content }}
+      
+      </section>			
+      <footer>
+        {% if site.github.is_project_page %}
+        <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+        {% endif %}
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+  </body>
+</html>
